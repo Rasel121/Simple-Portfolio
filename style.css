@@ -1,0 +1,422 @@
+/* Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sen:wght@400..800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Variable */
+:root{
+    --main-color: #1f1f1f;
+    --second-color: #333333;
+}
+
+/* universal css  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* Navigation css  */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    align-items: center;
+    padding: 25px 160px;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #F7F7F7;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+nav ul li .resume{
+    background-color: #E65F78;
+}
+
+/* Hero Section  */
+.hero{
+    width: 1440px;
+    height: 924px;
+    padding: 255px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    gap: 50px;
+}
+
+.hero .logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.hero .title h1{
+    font-size: 72px;
+    color: white;
+    font-weight: 900;
+}
+
+
+.hero .title h1::after{
+    content: "Ahmed";
+    color: #E65F78;
+}
+
+.hero .title span{
+    font-size: 24px;
+    color: #F7F7F7;
+}
+
+/* About Me Section  */
+.aboutme{
+    width: 1440px;
+    height: 924.68px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    flex-direction: column;
+}
+
+.aboutme .title h2,
+.experience .title h2,
+.skills .title h2,
+.portfolio .title h2,
+.Contact .title h2{
+    font-size: 48px;
+    color: #F7F7F7;
+    font-weight: 900;
+    position:relative;
+}
+
+.aboutme .title h2::after,
+.experience .title h2::after,
+.skills .title h2::after,
+.portfolio .title h2::after,
+.Contact .title h2::after{
+    content: "";
+    border-bottom: 4px solid #E65F78;
+    position:absolute;
+    width: 60px;
+    top: 120%;
+    left: 40%;
+}
+
+.aboutme .details{
+    width: 931px;
+    height: 253.68px;
+    display: flex;
+    gap: 50px;
+}
+
+
+.aboutme .details .logo img{
+    width: 250px;
+    height: 253.68px;
+    border-radius: 1px;
+}
+
+
+.aboutme .details .text .des span{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.aboutme .details .text .table table{
+    margin-top: 30px;
+    color: #F7F7F7;
+    border-spacing: 0 20px;
+}
+
+.aboutme .details .text .table table th{
+    width: 120px;
+    text-align: left;
+}
+
+
+.aboutme .details .text .table table td{
+    width: 198px;
+    text-align: left;
+}
+
+.aboutme .card{
+    width: 722px;
+    height: 174px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutme .card .card1{
+    text-align: center;
+}
+
+.aboutme .card .card1 h4{
+    color: #E65F78;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+
+.aboutme .card .card1 span{
+    color: #F7F7F7;
+    font-size: 20px;
+}
+
+/* Experience  */
+.experience{
+    width: 1440px;
+    height: 873px;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    flex-direction: column;
+}
+
+.experience .card{
+    width: 920px;
+    height: 466px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.experience .card .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experience .card .card1 .main-card{
+    width: 435px;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+.experience .card .card1 .main-card h4{
+    color: #E65F78;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.experience .card .card1 .main-card span{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/* Skills Section  */
+.skills{
+    width: 1440px;
+    height: 1001px;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    flex-direction: column;
+}
+
+.skills .card{
+    width: 920px;
+    height: 594px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.skills .card .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills .card .card1 .main-card{
+    width: 435px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+.skills .card .card1 .main-card h4{
+    color: #E65F78;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.skills .card .card1 .main-card span{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.skills .card .card1 .main-card img{
+    width: 75px;
+    height: 75px;
+    border-radius: 20%;
+}
+
+/* Portfolio Section  */
+.portfolio{
+    width: 1440px;
+    height: 1359px;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    flex-direction: column;
+}
+
+.portfolio .card{
+    width: 920px;
+    height: 952px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.portfolio .card .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio .card .card1 .main-card{
+    width: 435px;
+    height: 451px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+.portfolio .card .card1 .main-card h4{
+    color: #E65F78;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.portfolio .card .card1 .main-card span{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.portfolio .card .card1 .main-card img{
+    width: 385px;
+    height: 215px;
+    border-radius: 2%;
+}
+
+.portfolio .card .card1 .main-card .btn{
+    display: flex;
+    gap: 10px;
+}
+
+.portfolio .card .card1 .main-card .btn button{
+    padding: 6px;
+    border: 2px solid #FFFFFF;
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Contact Section  */
+.Contact{
+    width: 1440px;
+    height: 731px;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    flex-direction: column;
+}
+
+.Contact .dec{
+    width: 544px;
+    text-align: center;
+}
+
+.Contact .dec span{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.Contact .btn button{
+    width: 142px;
+    height: 43px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #E65F78;
+    border: none;
+    border-radius: 2px;
+}
+
+.Contact .social{
+    display: flex;
+    gap: 18px;
+}
+
+.Contact .social a{
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+}
+
+
+/* Footer Section  */
+footer{
+    height: 47px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer span{
+    color: #FFFFFF;
+}
+
+footer .name{
+    color: #E65F78;
+}
